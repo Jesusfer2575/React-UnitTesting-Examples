@@ -13,7 +13,7 @@ export default function () {
     <div>
       <h1>TODOS</h1>
       <ul className="list">
-        <li className="completed">Learn React</li>
+        <li className="completed">Learn React ⚛️</li>
         <li className="completed">Learn Jest</li>
         <li>Learn React Testing Library</li>
       </ul>

@@ -21,8 +21,10 @@ describe("fire-event examples", () => {
     const input = screen.getByRole("textbox");
 
     fireEvent.keyDown(input, { key: "Enter" });
+    fireEvent.keyDown(input, { key: "Enter" });
+    fireEvent.keyDown(input, { key: "Enter" });
 
-    expect(onSearch).toHaveBeenCalledTimes(1);
+    expect(onSearch).toHaveBeenCalledTimes(3);
   });
 
   it("triggers the search when the button is clicked", () => {
@@ -33,7 +35,8 @@ describe("fire-event examples", () => {
     const button = screen.getByRole("button");
 
     fireEvent.click(button);
+    fireEvent.click(button);
 
-    expect(onSearch).toHaveBeenCalledTimes(1);
+    expect(onSearch).toHaveBeenCalledTimes(2);
   });
 });

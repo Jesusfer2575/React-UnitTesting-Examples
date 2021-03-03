@@ -6,7 +6,7 @@ describe("selector types", () => {
   it("selects a single element with getBy* query", () => {
     render(<TodoList />);
 
-    expect(screen.getByText("Learn React")).toBeTruthy();
+    expect(screen.getByText("Learn React ⚛️")).toBeTruthy();
   });
 
   it("selects multiple elements with getAllBy* query", () => {

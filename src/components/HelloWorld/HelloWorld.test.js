@@ -6,12 +6,10 @@ import HelloWorld from "./HelloWorld";
 describe("render examples", () => {
   it("renders a React Component", () => {
     // Access the resulting output through container property
-    const { container, baseElement, asFragment } = render(<HelloWorld />);
+    const { container } = render(<HelloWorld />);
 
     // The resulting output is wrapped in a `<div>` element
     expect(container.outerHTML).toBe("<div><h1>Hello world!</h1></div>");
-    //expect(asFragment()).toBe("<DocumentFragment><div><h1>Hello world!</h1></div></DocumentFragment>");
-    // expect(baseElement.outerHTML).toBe("<h1>Hello world!</h1>");
   });
 
   it("renders any JSX", () => {
